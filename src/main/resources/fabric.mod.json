@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "tmm-datapack-extension",
+	"version": "${version}",
+	"name": "TMM Datapack Extension",
+	"description": "Allows loading Train Murder Mystery area configurations from datapacks",
+	"authors": [
+		"Doctor4t extended by example"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tmm-datapack-extension/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.tmmextension.Tmmdatapackextension"
+		]
+	},
+	"mixins": [
+		"tmm-datapack-extension.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"trainmurdermystery": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

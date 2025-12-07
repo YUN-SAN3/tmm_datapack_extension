@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.example.tmmextension.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"AreasWorldComponentMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
